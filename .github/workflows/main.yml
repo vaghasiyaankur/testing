@@ -15,11 +15,6 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: Install Composer Dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
-
-    - name: npm install
-      run: npm install
       
     - name: FTP Deploy to WP Engine (Staging)
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
