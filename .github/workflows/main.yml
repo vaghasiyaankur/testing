@@ -20,9 +20,6 @@ jobs:
 
     - name: npm install
       run: npm install
-
-    - name: npm run bundle
-      run: npm run bundle
       
     - name: FTP Deploy to WP Engine (Staging)
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
